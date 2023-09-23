@@ -1,0 +1,20 @@
+.bottom-navbar {
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px; /* Increase the top and bottom padding to make it taller */
+    width: 100%;
+    height: auto; /* Set height to auto to accommodate the taller content */
+    min-height: 160px; /* Adjust the minimum height for usability */
+  }
+  
+  .bottom-link {
+    color: #fff; /* Text color of the link */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust padding as needed for spacing */
+    display: block; /* Make the link a block element for full width */
+  }
+  

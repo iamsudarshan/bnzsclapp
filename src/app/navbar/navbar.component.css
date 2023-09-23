@@ -1,0 +1,117 @@
+/* Reset some default styles */
+:host, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the navigation bar */
+  .navbar {
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px; /* Increase the top and bottom padding to make it taller */
+    width: 100%;
+    height: auto; /* Set height to auto to accommodate the taller content */
+    min-height: 160px; /* Adjust the minimum height for usability */
+  }
+  /* Your existing CSS for the navigation bar (previous styles) */
+
+/* CSS to adjust the size of the logo image */
+
+  
+  
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+/* Your existing CSS for the navigation bar (previous styles) */
+
+/* CSS to adjust the size of the logo image and eliminate the gap */
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0; /* Remove the margin-right to eliminate the gap */
+  }
+  
+  .icon img {
+    width: 24px; /* Set the width to your desired size (e.g., 24px) */
+    height: 24px; /* Set the height to your desired size (e.g., 24px) */
+    margin-right: 5px; /* Adjust the margin-right to control spacing */
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  /* CSS for the navigation bar (previous styles) */
+
+/* CSS for the moving text animation */
+.moving-text-container {
+    overflow: hidden;
+    width: 100%;
+    height: 20px; /* Adjust the height as needed */
+  }
+  
+  .moving-text {
+    animation: moveLeftToRight 10s linear infinite; /* Adjust animation duration as needed */
+    white-space: nowrap;
+    font-family: 'YourCustomFont', sans-serif; /* Specify your custom font or use a web-safe font */
+  font-weight: bold; /* Make the text bold */
+}
+  
+  
+  @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+
+  .action-button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    border: 2px solid #fff; /* Add a 2px solid white border */
+    padding: 5px 15px; /* Add padding to the buttons for better spacing */
+    border-radius: 5px; /* Optional: Add border radius for rounded buttons */
+  }
+  
+  /* Style for the active state of the buttons (e.g., when hovered) */
+  .action-button:hover {
+    background-color: #fff; /* Change background color on hover */
+    color: #343a40; /* Change text color on hover */
+  }
+
+  /* Your existing CSS for the navigation bar (previous styles) */
+
+/* CSS to adjust the size of the logo image and eliminate the gap */
