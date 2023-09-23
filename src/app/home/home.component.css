@@ -1,0 +1,65 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+.container {
+    min-height: 55vh; /* Set the minimum height to 100% of the viewport height */
+  }
+  
+  /* Additional styles for the text area if needed */
+  .text-center {
+    padding-top: 20px; /* Add padding to center the text vertically */
+  }
+/* Center the button horizontally and vertically */
+
+  /* Italic font style */
+
+  
+ 
+  /* Italic font style */
+ /* Center the button horizontally and vertically */
+
+ .instructions {
+    border: 2px solid #007bff; /* Add a border with a color of your choice (e.g., blue) */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 10px; /* Add rounded corners to the border */
+    background-color: #f5f5f5; /* Add a background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    margin-top: 20px; /* Add margin to separate from the form */
+  }
+  
+  .instructions h3 {
+    color: #007bff; /* Style the heading with the same color as the border */
+  }
+  
+  .instructions ul {
+    list-style-type: disc; /* Use a bullet list style */
+    padding-left: 20px; /* Add left padding for the list items */
+  }
+  
+  .instructions li {
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+  
+  /* Style links within the instructions section */
+  .instructions a {
+    color: #007bff; /* Link color */
+    text-decoration: underline; /* Underline links */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+  
+  }
+  
+  .instructions a:hover {
+    color: #0056b3; /* Change link color on hover */
+  }
+  /* carousel.component.css */
+.stylish-carousel {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 100%; /* Make the carousel fill the entire height of its container */
+  }
+  
+  .carousel-inner {
+    border-radius: 8px;
+  }
+  
