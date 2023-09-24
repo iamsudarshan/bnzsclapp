@@ -1,0 +1,37 @@
+ 
+/* Add this CSS in your component's CSS file or a global stylesheet */
+/* Center the stepper on the screen */
+.centered-stepper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 254, 254, 0.65) url('/assets/white.jpg');
+  background-blend-mode: darken;
+  min-height: 95%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* Reduce the size of the stepper */
+.small-stepper {
+  min-width: 200px; /* Adjust the max-width as needed */
+  width: 60%;
+  padding: 20px;
+}
+
+
+
+mat-step-header .mat-step-label{
+  color: rgba(0, 0, 0, .54)
+}
+.mat-step-header .mat-step-icon {
+  color: rgba(0, 0, 0, .54);
+  background-color: transparent;
+}
+.vertical-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Add vertical spacing between form fields */
+}

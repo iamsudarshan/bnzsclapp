@@ -1,9 +1,54 @@
 <app-navbar></app-navbar>
-<main role="main" class="container mt-5">
-  <div class="container">
-    <div class="text-center mt-5">
-      <h3>Dashboard page</h3>
-      <p class="text-bold " [innerText]="'Hi '+this.user.displayName+', your Firebase ID is '+this.user.localId" ></p>
-    </div>
-  </div>
-</main>
+<div class="centered-stepper-container">
+  <mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper" class="small-stepper">
+    
+    <!-- Step 1: Contact Details -->
+    <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>Contact Details</ng-template>
+      <form [formGroup]="firstFormGroup">
+        <div class="vertical-form-fields">
+          <mat-form-field>
+            <input matInput placeholder="Email"  required>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Phone Number"  required>
+          </mat-form-field>
+        </div>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!-- Step 2: Company Details -->
+    <mat-step [stepControl]="secondFormGroup">
+      <ng-template matStepLabel>Company Details</ng-template>
+      <form [formGroup]="secondFormGroup">
+        <div class="vertical-form-fields">
+          <mat-form-field>
+            <input matInput placeholder="Company Name">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Company Address">
+          </mat-form-field>
+        </div>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!-- Step 3: Payment -->
+    <mat-step>
+      <ng-template matStepLabel>Payment</ng-template>
+      <!-- Add your payment form here -->
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+    
+  </mat-horizontal-stepper>
+</div>
+<app-bottom-bar></app-bottom-bar>

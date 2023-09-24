@@ -8,9 +8,17 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+
 import { HttpClientModule} from '@angular/common/http';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component'
+// import {MatStepperModule, MatInputModule, MatButtonModule} from '@angular/material'
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 const routes:Routes = [
   {path:'',component:HomeComponent },
@@ -27,13 +35,19 @@ const routes:Routes = [
     RegisterComponent,
     LoginComponent,
     DashboardComponent,
-    BottomBarComponent
+    BottomBarComponent,
+    
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    FormsModule,
-    HttpClientModule
+
+    HttpClientModule,
+    MatStepperModule, MatInputModule, MatButtonModule,
+      FormsModule,
+      ReactiveFormsModule,
+      BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

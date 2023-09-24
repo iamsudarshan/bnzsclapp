@@ -1,21 +1,22 @@
-<nav class="navbar">
- 
-  <a class="navbar-brand" routerLink="/">UltimateAGODA</a>
-  <ul class="navbar-nav">
-   
-  </ul>
-  <div class="navbar-actions">
-    
-    <li><a (click)="logout()">Logout</a></li>
-    <li><a routerLink="/dashboard" class="action-button">Dashboard</a></li>
-  
-    <a routerLink="/login" class="action-button">Login</a>
+<div class="sticky-content">
+  <nav class="navbar">
+    <a class="navbar-brand" routerLink="/">UltimateAGODA</a>
+    <ul class="navbar-nav">
+      <!-- Your navigation links go here -->
+    </ul>
+    <div class="navbar-actions">
+      <li><a (click)="logout()">Logout</a></li>
+      <li><a routerLink="/dashboard" class="action-button">Dashboard</a></li>
+      <a routerLink="/login" class="action-button">Login</a>
+    </div>
+  </nav>
+
+  <div class="moving-text-container">
+    <div class="moving-text">Hello Ultimate Agoda</div>
   </div>
-</nav>
-<hr>
-<div class="moving-text-container">
-  <div class="moving-text">Hello Ultimate Agoda</div>
+
+  <!-- Rest of your page content goes here -->
+  <div class="content">
+    <!-- Your page content here -->
+  </div>
 </div>
-<hr>
-
-
