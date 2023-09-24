@@ -1,117 +1,83 @@
-/* Reset some default styles */
-:host, ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style the navigation bar */
-  .navbar {
-    background-color: #343a40;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px; /* Increase the top and bottom padding to make it taller */
-    width: 100%;
-    height: auto; /* Set height to auto to accommodate the taller content */
-    min-height: 160px; /* Adjust the minimum height for usability */
-  }
-  /* Your existing CSS for the navigation bar (previous styles) */
-
-/* CSS to adjust the size of the logo image */
-
-  
-  
-  
-  .navbar-actions {
-    display: flex;
-    align-items: center;
-  }
-  
-/* Your existing CSS for the navigation bar (previous styles) */
-
-/* CSS to adjust the size of the logo image and eliminate the gap */
-.icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 0; /* Remove the margin-right to eliminate the gap */
-  }
-  
-  .icon img {
-    width: 24px; /* Set the width to your desired size (e.g., 24px) */
-    height: 24px; /* Set the height to your desired size (e.g., 24px) */
-    margin-right: 5px; /* Adjust the margin-right to control spacing */
-  }
-  
-  .navbar-brand {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  /* CSS for the navigation bar (previous styles) */
-
-/* CSS for the moving text animation */
-.moving-text-container {
-    overflow: hidden;
-    width: 100%;
-    height: 20px; /* Adjust the height as needed */
-  }
-  
-  .moving-text {
-    animation: moveLeftToRight 10s linear infinite; /* Adjust animation duration as needed */
-    white-space: nowrap;
-    font-family: 'YourCustomFont', sans-serif; /* Specify your custom font or use a web-safe font */
-  font-weight: bold; /* Make the text bold */
+/* Apply styles for the sticky content container */
+.sticky-content {
+  position: sticky;
+  top: 0;
+  background-color: transparent; /* Set the desired background color */
+  z-index: 100; /* Ensure it's above other content */
 }
-  
-  
-  @keyframes moveLeftToRight {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
-  
 
-  .action-button {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 10px;
-    border: 2px solid #fff; /* Add a 2px solid white border */
-    padding: 5px 15px; /* Add padding to the buttons for better spacing */
-    border-radius: 5px; /* Optional: Add border radius for rounded buttons */
-  }
-  
-  /* Style for the active state of the buttons (e.g., when hovered) */
-  .action-button:hover {
-    background-color: #fff; /* Change background color on hover */
-    color: #343a40; /* Change text color on hover */
-  }
+/* Apply styles for the navigation bar */
+.navbar {
+ 
+  color: white;
+  background: rgba(0, 0, 0, 0.83) url('/assets/white.jpg');
+  background-blend-mode: darken;
+}
 
-  /* Your existing CSS for the navigation bar (previous styles) */
+/* Apply styles for the moving-text container */
+.moving-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #371869;
+  color: white;
+  position: relative; /* Remove 'fixed' positioning */
+  z-index: 999; /* Ensure it's above other content */
+}
 
-/* CSS to adjust the size of the logo image and eliminate the gap */
+/* Apply styles for the moving text */
+.moving-text {
+  font-size: 24px;
+  animation: moveLeftToRight 10s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Apply styles for your page content */
+.content {
+  /* Add styles for your page content here */
+}
+/* Style for the .navbar-actions div */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+ 
+}
+
+/* Style for the .navbar-actions li elements (list items) */
+.navbar-actions li {
+  list-style: none; /* Remove bullet points for list items */
+  margin-right: 10px; /* Add spacing between buttons */
+}
+
+/* Style for the .navbar-actions li a elements (links) */
+.navbar-actions li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 1px solid transparent; /* Add a border to the buttons (initially transparent) */
+  border-radius: 5px; /* Add rounded corners to the buttons */
+  border-color: #ffffff; /* New border color on hover */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transition effect for hover */
+}
+
+/* Hover effect for buttons within .navbar-actions */
+.navbar-actions li a:hover {
+  background-color: #007BFF; /* New background color on hover */
+  color: white; /* New text color on hover */
+  border-color: #0056b3; /* New border color on hover */
+}
+.navbar-brand {
+  font-family: "Your Preferred Font", sans-serif; /* Replace "Your Preferred Font" with the actual font name you want to use */
+  font-weight: bold; /* Optionally make the font bold */
+  font-size: 24px; /* Adjust the font size as needed */
+  text-decoration: none; /* Remove underlines from links */
+  color: #ffffff; /* Set the font color to your preference */
+}

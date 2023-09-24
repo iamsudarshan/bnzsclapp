@@ -1,14 +1,12 @@
 .bottom-navbar {
-    background-color: #343a40;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px; /* Increase the top and bottom padding to make it taller */
-    width: 100%;
-    height: auto; /* Set height to auto to accommodate the taller content */
-    min-height: 160px; /* Adjust the minimum height for usability */
-  }
-  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #343a40;
+  height: 80px
+  /* Other styles */
+}
   .bottom-link {
     color: #fff; /* Text color of the link */
     text-decoration: none;
@@ -18,3 +16,14 @@
     display: block; /* Make the link a block element for full width */
   }
   
+  .bottom-navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark black color with opacity */
+     /* Add padding to the navbar for better visibility */
+  }
+  .navbar{
+    font-family: 'Courier New', Courier, monospace;
+    color: #709dd1;
+    font-size: 13px;
+    
+  }
+ 
